@@ -1,0 +1,60 @@
+#{$buttons} {
+  background-color: $color-accent-link;
+  color: $color-neutral-100;
+  font-size: $font-size-button;
+  font-family: $font-family;
+  border-radius: $border-radius-button;
+  padding: 0.65rem 1.15rem;
+  margin: 0.5rem;
+  border: 2px solid $color-accent-link;
+  text-decoration: none;
+
+  &:is(:hover) {
+    background-color: $color-neutral-100;
+    color: $color-accent-link;
+    cursor: pointer;
+  }
+
+  &:where(:not(:active)):focus-visible {
+    outline-offset: 5px;
+    outline-color: $color-accent-link;
+    border-color: transparent;
+  }
+
+  &:is(:disabled, :disabled:hover) {
+    cursor: not-allowed;
+    border-color: $color-neutral-200;
+    background-color: $color-neutral-200;
+    color: $color-neutral-100;
+  }
+
+  &:is([type="reset"], .error) {
+    background-color: $color-accent-error;
+    color: $color-accent-error-light;
+    border-color: $color-accent-error;
+
+    &:hover {
+      background-color: $color-accent-error-light;
+      color: $color-accent-error;
+    }
+
+    &:where(:not(:active)):focus-visible {
+      outline-color: $color-accent-error;
+    }
+  }
+
+  &:is(.warning) {
+    background-color: $color-accent-warning;
+    color: $color-accent-warning-light;
+    border-color: $color-accent-warning;
+
+    &:hover {
+      background-color: $color-accent-warning-light;
+      color: $color-accent-warning;
+    }
+
+    &:where(:not(:active)):focus-visible {
+      outline-color: $color-accent-warning;
+    }
+  }
+}

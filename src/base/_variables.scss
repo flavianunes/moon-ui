@@ -1,0 +1,35 @@
+// breakpoints
+$small: 768px !default;
+$medium: 1024px !default;
+$large: 1280px !default;
+
+// colors
+
+$color-neutral-100: #f8fafc !default;
+$color-neutral-200: #94a3b8 !default;
+$color-neutral-300: #111827 !default;
+$color-accent-highlight: #fde047 !default;
+$color-accent-link: #0369a1 !default;
+$color-accent-error: #be123c !default;
+$color-accent-error-light: #fff1f2 !default;
+$color-accent-warning: #eab308 !default;
+$color-accent-warning-light: #fefce8 !default;
+
+// typography
+
+$font-size-body: 16px !default;
+$font-size-button: 1rem !default;
+$font-family: -apple-system, blinkmacsystemfont, helvetica neue, helvetica,
+  arial, sans-serif !default;
+
+// spacing
+
+// borders
+
+$border-radius-button: 6px !default;
+
+// elements
+
+$buttons: (
+  ".button, a.button, button, [type=submit], [type=reset], [type=button], input[type=file]::file-selector-button"
+) !default;

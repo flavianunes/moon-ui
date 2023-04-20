@@ -1,0 +1,40 @@
+{
+  "name": "moon-ui",
+  "version": "0.1.0",
+  "description": "css framework for semantic HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass --watch --update --style=expanded src:docs/css",
+    "sass:prod": "sass --no-source-map --style=compressed src:dist",
+    "docs": "live-server --watch=docs --entry-file=docs/",
+    "sass:lint": "stylelint src/**/*.scss",
+    "sass:lint:fix": "stylelint src/**/*.scss --fix",
+    "precommit:msg": "echo 'running lint...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit:msg",
+    "sass:lint:fix"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavianunes/moon-ui.git"
+  },
+  "keywords": [
+    "sass",
+    "css framework",
+    "sass framework"
+  ],
+  "author": "Flavia Nunes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flavianunes/moon-ui/issues"
+  },
+  "homepage": "https://github.com/flavianunes/moon-ui#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "pre-commit": "^1.2.2",
+    "sass": "^1.62.0",
+    "stylelint": "^15.5.0",
+    "stylelint-config-standard-scss": "^8.0.0"
+  }
+}
